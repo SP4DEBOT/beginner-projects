@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Kingdom of Heaven
+        </title>
+        <style>
+            body {
+                margin: 0;
+                font-family: 'Roboto', sans-serif;
+                background-color: #f4f4f9;
+                color: #333;
+                line-height: 1.6;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            .header {
+                background: linear-gradient( #4f1717, #8b0000);
+                color: white;
+                text-align: center;
+                padding: 60px 20px;
+                font-size: 2.5em;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+
+            .main {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                padding: 40px;
+                background: white;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+            }
+
+            .para {
+                flex: 1;
+                margin-right: 20px;
+            }
+
+            .para h2 {
+                margin-bottom: 20px;
+                font-size: 2.5em;
+                color: #002040;
+            }
+
+            .para p {
+                font-size: 1.2em;
+                text-align: justify;
+            }
+
+            .image {
+                flex: 1;
+                text-align: center;
+            }
+
+            .image img {
+                height: auto;
+                max-width: 100%;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            .button {
+                display: inline-block;
+                background-color: #8b0000;
+                color: white;
+                padding: 10px 20px;
+                font-size: 1.2em;
+                font-weight: bold;
+                text-transform: uppercase;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                margin-top: 20px;
+            }
+
+            .button:hover {
+                background-color: #4f1717;
+            }
+
+            @media (max-width: 768px) {
+                .main {
+                    flex-direction: column;
+                }
+
+                .para {
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="header">
+                Kingdom Of Heaven
+            </div>
+
+            <div class="main">
+
+                <div class="para">
+                    <h2>King Baldwin</h2>
+                    <p>
+                        In the film <i>Kingdom of Heaven</i>, King Baldwin IV (played by Edward Norton)
+                        is the noble, masked <b>"Leper King"</b> of Jerusalem who rules with wisdom and strength 
+                        despite his decaying body. He is depicted as a respected, selfless leader holding a fragile peace 
+                        against Saladin, ultimately acting as a tragic heroic figure. He wears a silver mask to conceal the
+                        disfigurement caused by leprosy. Portrayed as intelligent, honorable, and deeply respected, holding
+                        power through sheer willpower rather than physical strength.
+                    </p>
+                </div>
+
+                <div class="image">
+                    <img src="images/king.jpg" alt="King Baldwin">
+                </div>
+
+            </div>
+             <div style="text-align: center; margin-top: 20px;">
+                <button class="button" onclick="showAlert()">Know More</button>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    function showAlert() {
+        alert("King Baldwin IV was a remarkable leader who inspired many with his courage and wisdom.");
+    }
+</script>
